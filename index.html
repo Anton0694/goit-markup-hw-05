@@ -26,7 +26,7 @@
           >
           <ul class="list first-nav-items">
             <li class="item-nav">
-              <a class="link menu-link" href="">Студия</a>
+              <a class="link menu-link current-nav" href="">Студия</a>
             </li>
             <li class="item-nav">
               <a class="link menu-link" href="./portfolio.html">Портфолио</a>
@@ -68,7 +68,14 @@
             для вашего бизнеса
           </h1>
 
-          <button class="main-btn-studio" type="button">Заказать услугу</button>
+          <button class="main-btn-studio" type="button" data-modal-open>Заказать услугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal"> 
+            
+            <button class="modal-btn" data-modal-close><span class="modal-btn-symbol">&#10006;</span> </button>
+
+          </div>
         </div>
       </section>
 
@@ -135,23 +142,32 @@
         <div class="container">
           <h2 class="title-studio">Чем мы занимаемся</h2>
           <ul class="about-work list">
-            <li class="item-work">
+            <li class="item-work item-work-overlay">
               <img
                 src="./images/about-work/img1.jpg"
                 alt="печатает на клавиатуре"
               />
+              <div class="item-work-textbox">
+              <p class="item-work-textstyle">Десктопные приложения</p>
+              </div>
             </li>
-            <li class="item-work">
-              <img
+            <li class="item-work item-work-overlay">
+              <img 
                 src="./images/about-work/img2.jpg"
                 alt="синхронизирует телефон с ноутбуком"
               />
+              <div class="item-work-textbox">
+              <p class="item-work-textstyle">Мобильные приложения</p>
+              </div>
             </li>
-            <li class="item-work">
-              <img
+            <li class="item-work item-work-overlay">
+              <img 
                 src="./images/about-work/img3.jpg"
                 alt="выбирает из цветовой палитры на планшете"
               />
+              <div class="item-work-textbox">
+              <p class="item-work-textstyle">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -440,5 +456,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
