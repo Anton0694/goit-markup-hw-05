@@ -551,7 +551,7 @@ img {
 }
 
 .projects-items-textlink {
-  position: relative;
+  transform: translateY(0);
 }
 
 .projects-items-textbox {
