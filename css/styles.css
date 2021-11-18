@@ -290,12 +290,24 @@ img {
 	right: 10px;
 	height: 30px;
 	width: 30px;
+	background: var(--dark-side-color);
+	border-radius: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+
+.modal-btn:hover, .modal-btn:focus {
+	border: 1px solid var(--accent-color);
 }
 
 .modal-btn-symbol {
-	padding-left: 1px;
 	display: inline-flex;
 	align-self: center;
+	color: var(--header-accent-color);
+}
+
+.modal-btn-symbol:hover {
+	color: var(--accent-color);
 }
 
 .container-work {
