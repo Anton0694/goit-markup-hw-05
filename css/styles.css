@@ -296,7 +296,8 @@ img {
 	box-sizing: border-box;
 }
 
-.modal-btn:hover, .modal-btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
 	border: 1px solid var(--accent-color);
 }
 
@@ -572,8 +573,7 @@ img {
 
 	color: var(--dark-side-color);
 	background: rgba(33, 150, 243, 0.9);
-	padding-left: 24px;
-	padding-top: 63px;
+	padding: 24px 63px;
 
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	transform: translateY(100%);
