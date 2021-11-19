@@ -697,6 +697,7 @@ img {
 .footer-social-title {
 	display: flex;
 	color: var(--dark-side-color);
+	text-transform: uppercase;
 }
 
 .social-links-item-footer {
